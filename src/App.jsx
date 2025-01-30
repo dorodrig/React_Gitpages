@@ -4,17 +4,16 @@ import AuthContext from './context/AuthContext'
 import HomePages from './components/HomePages'
 
 function App() {
-  const [step, setStep] = useState("home_pages");
+  const [step, setStep] = useState("home");
 
   return (
-    <AuthContext.Provider value={{step, setStep}}>
+    <AuthContext.Provider value = {{step, setStep}}>
       <div className="container_homepage">
        <h1>PRUEBA TECNICA</h1> 
-       {step === "home_pages" && <HomePages/>}       
+       {step === "home" && <HomePages/>}       
       </div>
 
     </AuthContext.Provider>
   )
 }
-
 export default App

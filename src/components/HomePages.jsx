@@ -1,32 +1,77 @@
-import { useContext } from "react";
-import AuthContext from "../context/AuthContext";
+import { useState } from "react";
+import SumEvenNumbers from "./components/SumEvenNumbers";
+import CountVowels from "./components/CountVowels";
+import RemoveDuplicates from "./components/RemoveDuplicates";
+import SortByLength from "./components/SortByLength";
+import CountWords from "./components/CountWords";
+import IsPrime from "./components/IsPrime";
+import SortPrimeNumbers from "./components/SortPrimeNumbers";
 
-const HomePages = ()=>{
+const HomePages = () => {
+  const [selectedConcept, setSelectedConcept] = useState("");
+  const [inputValue, setInputValue] = useState("");
+  const [result, setResult] = useState(null);
 
-    let {setStep}= useContext(AuthContext);
-    let lista = ''
-    return(
-        <>
-        <main>
-         <h3>Prueba tecnica Corferias</h3>
-         <fieldset>
-            <label htmlFor="Select">Seleccione por Favor el concepto a Evaluar</label>
-            <ol className="Lista_conceptos" value={lista} >
-                <li>Suma de Números Pares</li>
-                <li>Contador de Vocales</li>
-                <li>Eliminar Duplicados</li>
-                <li>Ordenar por Longitud</li>
-                <li>Contar Palabras</li>
-                <li>Comprobar Número Primo</li>
-                <li>Generar Números Primos</li>
-                <li>Ordenar Números Primos</li>
-            </ol>
-            <button type="submit" onClick={setStep({lista})}> Verificar</button>
-         </fieldset>
+  const handleSelect = (concept) => {
+    setSelectedConcept(concept);
+    setResult(null);
+  };
 
-        </main>
-        </>
+  const handleVerify = () => {
+    switch (selectedConcept) {
+      case "Suma de Números Pares":
+        setResult(<SumEvenNumbers limit={parseInt(inputValue, 10)} />);
+        break;
+      case "Contador de Vocales":
+        setResult(<CountVowels text={inputValue} />);
+        break;
+      case "Eliminar Duplicados":
+        setResult(
+          <RemoveDuplicates array={inputValue.split(",").map((item) => item.trim())} />
+        );
+        break;
+      case "Ordenar por Longitud":
+        setResult(<SortByLength words={inputValue.split(",")} />);
+        break;
+      case "Contar Palabras":
+        setResult(<CountWords text={inputValue} />);
+        break;
+      case "Comprobar Número Primo":
+        setResult(<IsPrime number={parseInt(inputValue, 10)} />);
+        break;
+      case "Ordenar Números Primos":
+        setResult(
+          <SortPrimeNumbers primes={inputValue.split(",").map(Number)} />
+        );
+        break;
+      default:
+        setResult("Seleccione un concepto válido");
+    }
+  };
 
-    )
-}
+  return (
+    <main>
+      <h3>Prueba técnica Corferias</h3>
+      <fieldset>
+        <label htmlFor="Select">Seleccione el concepto a Evaluar</label>
+        <ol className="Lista_conceptos">
+          {["Suma de Números Pares", "Contador de Vocales", "Eliminar Duplicados", "Ordenar por Longitud", "Contar Palabras", "Comprobar Número Primo", "Ordenar Números Primos"].map((concept, index) => (
+            <li key={index} onClick={() => handleSelect(concept)} style={{ cursor: "pointer" }}>
+              {concept}
+            </li>
+          ))}
+        </ol>
+        <input
+          type="text"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          placeholder="Ingrese el valor requerido"
+        />
+        <button type="button" onClick={handleVerify}>Verificar</button>
+      </fieldset>
+      <div>{result}</div>
+    </main>
+  );
+};
+
 export default HomePages;
