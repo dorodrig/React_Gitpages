@@ -4,4 +4,4 @@ const CountWords = ({ text }) => {
     const wordCount = text.trim().split(/\s+/).length;
     return <div>Número de palabras: {wordCount}</div>;
 };
-  
+export default CountWords

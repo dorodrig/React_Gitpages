@@ -8,3 +8,4 @@ const SumEvenNumbers = ({ limit }) => {
     };
     return <div>Suma de pares hasta {limit}: {sumEven(limit)}</div>;
   };
+  export default SumEvenNumbers

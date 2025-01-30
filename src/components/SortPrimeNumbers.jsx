@@ -4,3 +4,4 @@ const SortPrimeNumbers = ({ primes }) => {
     const sortedPrimes = [...primes].sort((a, b) => a - b);
     return <div>Números primos ordenados: {JSON.stringify(sortedPrimes)}</div>;
   };
+  export default SortPrimeNumbers

@@ -4,3 +4,4 @@ const RemoveDuplicates = ({ array }) => {
     const uniqueArray = [...new Set(array)];
     return <div>Sin duplicados: {JSON.stringify(uniqueArray)}</div>;
   };
+  export default RemoveDuplicates

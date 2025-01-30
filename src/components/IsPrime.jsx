@@ -8,3 +8,4 @@ const IsPrime = ({ number }) => {
     };
     return <div>{number} {isPrime(number) ? "es primo" : "no es primo"}</div>;
   };
+  export default IsPrime
