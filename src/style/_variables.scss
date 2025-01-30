@@ -1,0 +1,29 @@
+// Fonts
+$font-family: "Montserrat", sans-serif;
+
+// Colors
+$white: #fff;
+$gray: #525252;
+$error: #d14167;
+
+// Background
+$container-bg: linear-gradient(
+ to right top,
+ #aa1e31,
+ #b2454a,
+ #b76364,
+ #ba7e7e,
+ #ba9999);
+
+$main-bg: linear-gradient(
+ to bottom, 
+#aa1e31, 
+#892248, 
+#5f2a4d, 
+#3a2b3f, 
+#242424
+);
+
+// Shadows
+$main-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+  rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;

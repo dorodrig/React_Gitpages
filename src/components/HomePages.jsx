@@ -53,7 +53,7 @@ const HomePages = () => {
     <main>
       <h3>Prueba técnica Corferias</h3>
       <fieldset>
-        <label htmlFor="Select">Seleccione el concepto a Evaluar</label>
+        <label htmlFor="Select">* Seleccione el concepto a Evaluar</label>
         <ol className="Lista_conceptos">
           {["Suma de Números Pares", "Contador de Vocales", "Eliminar Duplicados", "Ordenar por Longitud", "Contar Palabras", "Comprobar Número Primo", "Ordenar Números Primos"].map((concept, index) => (
             <li key={index} onClick={() => handleSelect(concept)} style={{ cursor: "pointer" }}>
@@ -61,15 +61,18 @@ const HomePages = () => {
             </li>
           ))}
         </ol>
-        <input
-          type="text"
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-          placeholder="Ingrese el valor requerido"
-        />
-        <button type="button" onClick={handleVerify}>Verificar</button>
-      </fieldset>
-      <div>{result}</div>
+        </fieldset>
+        <div className="container_button">
+          <input className="textbox"
+            type="text"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+            placeholder="Ingrese el valor requerido"
+          />
+          <button type="button" onClick={handleVerify}>Verificar</button>      
+      <div className="resultado">{result}</div>
+
+        </div>
     </main>
   );
 };

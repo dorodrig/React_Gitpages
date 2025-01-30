@@ -1,0 +1,36 @@
+@use"../variables" as v ;
+
+h3{
+    font-family: v.$font-family;
+    color: #470a14;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 2px,solid #e64d56;
+    
+};
+main{
+ display: flex;
+ flex-direction: column;  
+ align-items: center;
+   
+}
+fieldset{
+    font-family: v.$font-family;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 2px,solid #e64d56;
+    color: #fef2f2;
+    font-size: 15px;
+    width: 400px;
+    .Lista_conceptos{        
+        padding: 1rem;
+        margin: 0.5rem;
+        font-family: v.$font-family;
+        :hover{
+           background-color: #fef2f2;
+           color:#470a14;
+           font-weight: bold;
+        }
+       
+    }
+}
