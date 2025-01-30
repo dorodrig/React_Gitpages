@@ -1,11 +1,11 @@
 import { useState } from "react";
-import SumEvenNumbers from "./components/SumEvenNumbers";
-import CountVowels from "./components/CountVowels";
-import RemoveDuplicates from "./components/RemoveDuplicates";
-import SortByLength from "./components/SortByLength";
-import CountWords from "./components/CountWords";
-import IsPrime from "./components/IsPrime";
-import SortPrimeNumbers from "./components/SortPrimeNumbers";
+import SumEvenNumbers from "./SumEvenNumbers";
+import CountVowels from "./CountVowels";
+import RemoveDuplicates from "./RemoveDuplicates";
+import SortByLength from "./SortByLength";
+import CountWords from "./CountWords";
+import IsPrime from "./IsPrime";
+import SortPrimeNumbers from "./SortPrimeNumbers";
 
 const HomePages = () => {
   const [selectedConcept, setSelectedConcept] = useState("");
