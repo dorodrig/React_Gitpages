@@ -3,7 +3,7 @@ import { useState } from 'react'
 import AuthContext from './context/AuthContext'
 
 function App() {
-  const [count, setStep] = useState("signup");
+  const [step, setStep] = useState("home_pages");
 
   return (
     <AuthContext.Provider value={{step, setStep}}>
