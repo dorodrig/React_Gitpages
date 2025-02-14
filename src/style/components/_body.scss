@@ -2,10 +2,10 @@
 
 h3{
     font-family: v.$font-family;
-    color: #470a14;
+    color: v.$white;
     padding: 1rem;
     margin: 0.5rem;
-    border: 2px,solid #e64d56;
+    border: 2px,solid v.$gray
     
 };
 main{
@@ -14,14 +14,103 @@ main{
  align-items: center;
    
 }
+.container_menu{
+    display: flex;
+    flex-direction: row;
+    margin: 0.6rem
+    
+}
+.menu_1{
+    margin: 0.6rem
+}
+.menu_2{
+    margin: 0.6rem
+}
+.menu_3{
+    margin: 0.6rem
+}
+#framework_1{
+    padding: 0.25rem 1.25rem;
+    background-image:v.$main-bg ;
+    border-radius: 0.625rem;
+    font-family: v.$font-family;
+    font-weight: bold;
+    font-size: 0.95rem; 
+    color: v.$white;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.025rem;   
+        option{
+            font-family: v.$font-family;
+            font-weight: bold;
+            font-size: 0.85rem; 
+            cursor: pointer;
+        }          
+}
+#framework_1 option{
+    color:v.$text;
+    cursor: pointer;
+
+}
+
+#framework_2{
+    padding: 0.25rem 1.25rem;
+    background-image:v.$main-bg ;
+    border-radius: 0.625rem;
+    font-family: v.$font-family;
+    font-weight: bold;
+    font-size: 0.95rem; 
+    color: v.$white;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.025rem;   
+        option{
+            font-family: v.$font-family;
+            font-weight: bold;
+            font-size: 0.85rem; 
+            cursor: pointer;
+        }          
+}
+#framework_2 option{
+    color:v.$text;
+    cursor: pointer;
+
+}
+#framework_3 {
+    padding: 0.25rem 1.25rem;
+    background-image:v.$main-bg ;
+    border-radius: 0.625rem;
+    font-family: v.$font-family;
+    font-weight: bold;
+    font-size: 0.95rem; 
+    color: v.$white;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.025rem;   
+        option{
+            font-family: v.$font-family;
+            font-weight: bold;
+            font-size: 0.85rem; 
+            cursor: pointer;
+        }          
+}
+#framework_3 option{
+    color:v.$text;
+    cursor: pointer;
+
+}
+
 fieldset{
     font-family: v.$font-family;
     padding: 1rem;
     margin: 0.5rem;
-    border: 2px,solid #e64d56;
+    border: 2px,solid v.$gray;
     color: #fef2f2;
     font-size: 15px;
-    width: 400px;
+    width: 100%;
     .Lista_conceptos{        
         padding: 1rem;
         margin: 0.5rem;

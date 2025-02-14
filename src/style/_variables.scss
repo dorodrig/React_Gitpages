@@ -5,23 +5,24 @@ $font-family: "Montserrat", sans-serif;
 $white: #fff;
 $gray: #525252;
 $error: #d14167;
+$text : #16003c;
 
 // Background
 $container-bg: linear-gradient(
  to right top,
- #aa1e31,
- #b2454a,
- #b76364,
- #ba7e7e,
- #ba9999);
+ #16003c,
+ #1b0346,
+ #230351,
+ #2b025b, 
+ #330066);
 
 $main-bg: linear-gradient(
  to bottom, 
-#aa1e31, 
-#892248, 
-#5f2a4d, 
-#3a2b3f, 
-#242424
+  #330066,
+  #36006f,
+  #390079,
+  #3b0083,
+  #3d008d
 );
 
 // Shadows
