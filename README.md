@@ -1,54 +1,47 @@
-# 🏆 Prueba Técnica - Corferias  
+# Prueba Técnica - Lista de Usuarios (Siscomputo)
 
-Este proyecto es una solución a la prueba técnica de Corferias. Implementa varias funciones en React para resolver diferentes problemas algorítmicos, organizadas en componentes reutilizables.
+Este proyecto es una prueba técnica desarrollada en **React + Vite** para la empresa **Siscomputo**, cumpliendo con los requerimientos de visualización, filtrado y detalle de usuarios desde una API pública.
 
-## 🎯 Objetivo  
+## 🚀 Tecnologías utilizadas
 
-El objetivo de este proyecto es demostrar habilidades en **React.js** desarrollando una aplicación interactiva donde los usuarios pueden seleccionar y probar diferentes algoritmos.  
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Axios](https://axios-http.com/)
+- [React Router DOM](https://reactrouter.com/)
+- [SCSS](https://sass-lang.com/)
 
-Los problemas implementados incluyen:  
-- ✅ Suma de números pares  
-- ✅ Contador de vocales  
-- ✅ Eliminación de duplicados  
-- ✅ Ordenación por longitud  
-- ✅ Contador de palabras  
-- ✅ Verificación de números primos  
-- ✅ Generación y ordenación de números primos  
+## 🔧 Funcionalidades implementadas
 
-## 🛠️ Tecnologías utilizadas  
+- ✅ Listado de usuarios en tarjetas con nombre, email y ciudad.
+- ✅ Filtro en tiempo real por nombre de usuario.
+- ✅ Vista de detalle individual al hacer clic en una tarjeta.
+- ✅ Botón de retorno a la lista principal desde el detalle.
+- ✅ Manejo de errores de red y carga.
+- ✅ Estilos personalizados usando SCSS y variables reutilizables.
 
-- **React.js** ⚛️ - Biblioteca para la UI  
-- **Vite** ⚡ - Entorno de desarrollo rápido  
-- **JavaScript (ES6+)** - Lenguaje principal  
-- **HTML5 + CSS3** 🎨 - Estructura y estilos  
-- **GitHub Pages** 🚀 - Para despliegue  
+## 📦 Instalación y ejecución
 
-## 📂 Estructura del proyecto  
+1. Clonar el repositorio:
 
-📦 react-pages
-┣ 📂 src
-┃ ┣ 📂 componentes
-┃ ┃ ┣ 📜 SumEvenNumbers.jsx
-┃ ┃ ┣ 📜 CountVowels.jsx
-┃ ┃ ┣ 📜 RemoveDuplicates.jsx
-┃ ┃ ┣ 📜 SortByLength.jsx
-┃ ┃ ┣ 📜 CountWords.jsx
-┃ ┃ ┣ 📜 IsPrime.jsx
-┃ ┃ ┣ 📜 SortPrimeNumbers.jsx
-┃ ┣ 📜 HomePages.jsx
-┣ 📜 paquete.json
-┣ 📜 README.md
-┣ 📜 vite.config.js
+```bash
+git clone https://github.com/tu-usuario/usuarios-siscomputo.git
+cd usuarios-siscomputo
 
-2️⃣ Instalar dependencias
+2. Instalar dependencias:
 npm install
-3️⃣ Ejecutar en modo desarrollo
-npm run dev
-4️⃣ Generar compilación para producción.
-npm run build
-5️⃣ Desplegar en páginas de GitHub
-npm run deploy
-✨ Autor
-David Orlando Rodríguez Bastidas
-📧 rodriguezdavid386@gmail.com
-📧 https://www.linkedin.com/in/david-orlando-rodriguez-bastidas-438626164/
+
+🌐 API utilizada
+https://jsonplaceholder.typicode.com/users
+
+src/
+├── components/      # Componentes reutilizables como UserCard y UserDetail
+├── pages/           # Página principal
+├── services/        # Axios + llamadas a la API
+├── styles/          # Archivos SCSS organizados y centralizados
+├── App.jsx
+└── main.jsx
+
+
+👤 Autor
+David Rodríguez
+Frontend Developer

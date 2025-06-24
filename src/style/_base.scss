@@ -1,0 +1,89 @@
+@use './variables' as *;
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: $spacing-lg;
+  text-align: center;
+}
+
+.card {
+  background-color: $secondary-color;
+  padding: $spacing-md;
+  margin-bottom: $spacing-md;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  h3 {
+    font-weight: $font-weight-bold;
+    margin-bottom: $spacing-sm;
+  }
+
+  p {
+    margin-bottom: $spacing-xs;
+  }
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: $spacing-md;
+  justify-content: center;
+}
+
+.user-detail {
+  background-color: $bg-color;
+  padding: $spacing-lg;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  max-width: 600px;
+  margin: auto;
+
+  h2 {
+    color: $primary-color;
+    margin-bottom: $spacing-md;
+  }
+
+  p {
+    margin-bottom: $spacing-sm;
+  }
+}
+
+
+
+.search-input {
+  width: 60%;
+  margin: 0 auto $spacing-lg;
+  padding: $spacing-sm;
+  border: 1px solid #ccc;
+  border-radius: $border-radius;
+  font-size: 1rem;
+  display: block;
+  color : white;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+    box-shadow: 0 0 0 2px rgba(0, 119, 204, 0.2);
+  }
+}
+.btn-back {
+  margin-top: $spacing-md;
+  padding: $spacing-sm $spacing-md;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  font-weight: $font-weight-bold;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}

@@ -1,30 +1,57 @@
-// Fonts
-$font-family: "Montserrat", sans-serif;
+// Tipografía
+$font-base: "Montserrat", sans-serif;
+$font-size: 16px;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
 
-// Colors
-$white: #fff;
-$gray: #525252;
-$error: #d14167;
-$text : #16003c;
+// Colores
+$primary-color: #0077cc;
+$secondary-color: #f4f4f4;
+$accent-color: #ff9800;
+$danger-color: #e53935;
+$text-color: #333;
+$bg-color: linear-gradient(
+ to top,
+  #94bfe5,
+  #aacaea,
+  #bed6ef,
+  #d2e2f4, 
+  #e5eef9);
 
-// Background
-$container-bg: linear-gradient(
- to right top,
- #16003c,
- #1b0346,
- #230351,
- #2b025b, 
- #330066);
+// Espaciado
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
 
-$main-bg: linear-gradient(
- to bottom, 
-  #330066,
-  #36006f,
-  #390079,
-  #3b0083,
-  #3d008d
-);
+// Bordes
+$border-radius: 8px;
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-// Shadows
-$main-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-  rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+// // Colors
+// $white: #fff;
+// $gray: #525252;
+// $error: #d14167;
+// $text : #16003c;
+
+// // Background
+// $container-bg: linear-gradient(
+//  to top,
+//  #94bfe5,
+//  #aacaea,
+//  #bed6ef,
+//  #d2e2f4, 
+//  #e5eef9);
+
+// $main-bg: linear-gradient(
+//  to bottom, 
+//   #330066,
+//   #36006f,
+//   #390079,
+//   #3b0083,
+//   #3d008d
+// );
+
+// // Shadows
+// $main-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+//   rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
